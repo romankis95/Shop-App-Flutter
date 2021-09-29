@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import './product.dart';
 
 class Products with ChangeNotifier {
-  final List<Product> _items = [
+  List<Product> _items = [
     Product(
       id: 'p1',
       title: 'Red Shirt',
@@ -36,7 +36,7 @@ class Products with ChangeNotifier {
       imageUrl:
           'https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Cast-Iron-Pan.jpg/1024px-Cast-Iron-Pan.jpg',
     ),
-  ]; // this shouldt be final as i do want to change data inside of this array
+  ];
   // var _showFavoritesOnly = false;
 
   List<Product> get items {
